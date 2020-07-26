@@ -11,24 +11,24 @@
 	rel="stylesheet" />
 </head>
 <body>
-	<h1>Curso Spring Boot - AlgaWorks!</h1>
+	<div class="panel panel-default" style="margin: 10px">
+		<h1>AlgaWorks Curso Spring Boot</h1>
+	</div>
 
 	<div class="panel panel-default" style="margin: 10px">
 		<div class="panel-heading">
-			<h1 class="panel-title">Lista de convidados</h1>
+			<h1 class="panel-title">Lista de Convidados</h1>
 		</div>
 
 		<div class="panel-body">
 			<form class="form-inline" method="POST" th:object="${convidado}"
 				th:action="@{/convidados}" style="margin: 20px 0">
 				<div class="form-grup">
-					<input type="text" class="form-control" 
-						placeholder="Nome"
-						th:field="*{nome}"/> 
-					<input type="text" class="form-control" 
-						placeholder="Acompanhantes" 
-						th:field="*{quantidadeAcompanhantes}"/>
+					<input type="text" class="form-control" placeholder="Nome"
+						th:field="*{nome}" /> <input type="text" class="form-control"
+						placeholder="Acompanhantes" th:field="*{quantidadeAcompanhantes}" />
 					<button type="submit" class="btn btn-primary">Adicionar</button>
+
 				</div>
 			</form>
 			<table class="table">
